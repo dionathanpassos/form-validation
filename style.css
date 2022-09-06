@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+
+}
+
+.header {
+    padding-top: 20px ;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.container {
+    width: 400px;    
+    background-color: #fafafa;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(105, 104, 104, 0.6);    
+}
+
+form {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.form-control {
+    position: relative;
+    margin-top: .2rem;
+}
+
+.form-control label {
+    display: inline-block; 
+    font-size: 1rem;
+
+}
+
+.form-control small {    
+    font-size: .7rem;
+    visibility: hidden;
+   
+
+}
+
+.form-control input {
+    width: 100%;
+    display: block;
+    padding: 5px 15px;
+    border: 1px solid #c3c3c3;
+    border-radius: 10px;
+    outline: none;
+}
+
+.form-control i {
+    position: absolute;
+    display: inline-block; 
+    top: 33px;
+    right: 10px;    
+    visibility: hidden;
+}
+
+form button { 
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: none;
+    padding: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #2C5364;
+    color: #fafafa;
+}
+
+button:hover {
+    filter: drop-shadow(2px 2px 5px rgb(0, 0, 0, 0.5));
+}
+
+.form-control.success input {
+    border-color: #2ecc71
+}
+
+.form-control.error input {
+    border-color: #e71c3c
+}
+
+.form-control.success i.fa-circle-check {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-circle-exclamation {
+    color: #e71c3c;
+    visibility: visible;
+}
+
+.form-control.error small {    
+    color: #e71c3c;
+    visibility: visible;
+
+}

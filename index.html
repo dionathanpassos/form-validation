@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5dfd27b4a3.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Formulário Cadastro</h3>
+        </div>
+        <form action="">
+            <div class="form-control">
+                <label for="">Nome</label>
+                <input type="text" class="name">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                <small>Msg Erro</small>
+            </div>
+
+            <div class="form-control">
+                <label for="">E-mail</label>
+                <input type="email" class="email" id="email">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                <small>Msg Erro</small>
+            </div>
+
+            <div class="form-control">
+                <label for="">Senha</label>
+                <input type="password" class="password">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                <small>Msg Erro</small>
+            </div>
+
+            <div class="form-control">
+                <label for="">Confirmar senha</label>
+                <input type="password" class="password-confirmation">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                <small>Msg Erro</small>
+            </div>
+            <input type="checkbox" name="visible-pass" id="hidden-pass"><span> Mostrar senhas</span>
+            <button type="submit" class="btn-submit">Enviar</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
